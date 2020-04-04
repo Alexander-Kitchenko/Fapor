@@ -1,0 +1,677 @@
+@font-face {
+	font-family: 'Open Sans';
+	src: url(../fonts/OpenSans.eot);
+	src: url(../fonts/OpenSans.eot?#iefix) format('embedded-opentype'),
+	url('../fonts/OpenSans.woff2') format('woff2'),
+	url(../fonts/OpenSans.woff) format('woff'),
+url('../fonts/OpenSans.ttf') format('truetype'),
+url('../fonts/OpenSans.svg#OpenSans') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url(../fonts/Raleway-Bold.eot);
+	src: url(../fonts/Raleway-Bold.eot?#iefix) format('embedded-opentype'),
+	url(../fonts/Raleway-Bold.woff2) format('woff2'),
+	url(../fonts/Raleway-Bold.woff) format('woff'),
+	url(../fonts/Raleway-Bold.ttf) format('truetype'),
+	url('../fonts/Raleway-Bold.svg#Raleway-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url(../fonts/Raleway-SemiBold.eot);
+	src: url(../fonts/Raleway-SemiBold.eot?#iefix) format('embedded-opentype'),
+	url(../fonts/Raleway-SemiBold.woff2) format('woff2'),
+	url(../fonts/Raleway-SemiBold.woff) format('woff'),
+	url(../fonts/Raleway-SemiBold.ttf) format('truetype'),
+	url('../fonts/Raleway-SemiBold.svg#Raleway-SemiBold') format('svg');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url(../fonts/Raleway-Medium.eot);
+	src: url(../fonts/Raleway-Medium.eot?#iefix) format('embedded-opentype'),
+	url(../fonts/Raleway-Medium.woff2) format('woff2'),
+	url(../fonts/Raleway-Medium.woff) format('woff'),
+	url(../fonts/Raleway-Medium.ttf) format('truetype'),
+	url('../fonts/Raleway-Medium.svg#Raleway-Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url(../fonts/OpenSans-Semibold.eot);
+	src: url(../fonts/OpenSans-Semibold.eot?#iefix) format('embedded-opentype'),
+	url(../fonts/OpenSans-Semibold.woff2) format('woff2'),
+	url(../fonts/OpenSans-Semibold.woff) format('woff'),
+	url(../fonts/OpenSans-Semibold.ttf) format('truetype'),
+	url(../fonts/OpenSans-Semibold.svg#OpenSans-Semibold) format('svg');
+	font-weight: 600;
+	font-style: normal;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+
+}
+header{
+    background-color: #24282f;
+	padding-top: 30px;
+}
+ .container{
+	max-width: 1100px;
+	margin: auto;
+}
+
+header nav ul{
+	list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+	margin-left: 28px;
+
+}
+header nav li:after{
+	content: "";
+	display: block;
+	width: 0;
+	height: 3px;
+	background-color: #b5a263;
+
+	transition: 0.3s;
+}
+
+
+header nav li:hover:after, header nav li.active:after{
+	width: 100%;
+
+}
+
+header nav ul li a{
+	color: white;
+	text-transform: uppercase;
+	font-size: 11px;
+	text-decoration: none;
+	display: inline-block;
+	padding: 0 11px 32px;
+	font-family: 'Open Sans', sans-serif;
+	/*font-family: 'Open Sans';*/
+	font-weight: normal;
+}
+
+header .logo{
+
+	float:left ;
+}
+
+header nav {
+float: right;
+}
+
+.container::after{
+	clear: both;
+	content:"";
+	display: block;
+}
+
+section{
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 72px;
+	padding-bottom: 85px;
+	background-image:url("../images/img_bckgraund_02.jpg");
+	color: white;
+	border-bottom: solid 1px #acaeb0;
+}
+
+section h1{
+	font-size: 32px;
+	text-transform: uppercase;
+	font-family: 'Raleway', sans-serif;
+	/*font-family: 'Raleway';*/
+	font-weight: bold;
+
+}
+
+section p {
+	font-size: 11px;
+	line-height: 20px;
+	font-family: 'Open Sans';
+	font-weight: normal;
+}
+
+main{
+	padding-bottom: 25px;
+}
+
+.wrap{
+	background-color: #ffffff;
+	padding-top: 121px;
+	padding-bottom: 25px;
+	text-align: center;
+
+}
+
+.wrap h2{
+	font-size: 19px;
+	text-align: center;
+	color: #24282f;
+	text-transform: uppercase;
+	margin-bottom: 50px;
+	font-family: 'Raleway', sans-serif;
+	/*font-family: 'Raleway';*/
+	font-weight: 600;
+
+}
+
+.wrap h2:after{
+	content: "";
+	display: block;
+	height: 3px;
+	max-width: 63px;
+	margin: auto;
+	background-color: #b5a263;
+	margin-top: 22px;
+}
+
+.box{
+	max-width: 889px;
+    margin: auto;
+}
+
+.img1 {
+	float: left;
+max-width: 246px;
+}
+
+
+.img2 {
+	float:left;
+	margin-left: 80px;
+	max-width: 246px;
+}
+
+.img3 {
+	float: right;
+	max-width: 246px;
+}
+
+.box:after {
+	clear: both;
+	display: block;
+	content: "";
+}
+
+.text_1{
+
+	padding-bottom:6px;
+	padding-left: 8px;
+
+    float: left;
+	display: inline-block;
+	font-size: 13px;
+	color: #232323;
+	text-transform: uppercase;
+}
+
+.text_1 h3{
+	padding-top: 22px;
+	font-family: 'Raleway', sans-serif;
+	/*font-family: 'Raleway';*/
+	font-weight: 500;
+}
+
+
+.text_1:after{
+	clear: both;
+	display: block;
+	content: "";
+}
+
+.img1 a{
+	margin-left: 3px;
+	float: right;
+    display: inline-block;
+	width: 28px;
+	height: 28px;
+	background-color: #dedede;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 28px;
+	margin-top: 20px;
+	font-size: 14px;
+	color: white;
+	text-decoration: none;
+}
+
+.text_1 a:before{
+	display: inline-block;
+	content: "\f39e";
+	font-family: 'Font Awesome 5 Brands';
+}
+
+.text_1 a.fab fa-twitter:before{
+	display: inline-block;
+	content: "\f099";
+	font-family: 'Font Awesome 5 Brands';
+}
+
+.text_1 a.fab fa-google-plus-g:before{
+	display: inline-block;
+	content: "\f0d5";
+	font-family: 'Font Awesome 5 Brands';
+}
+
+
+.text_1 p{
+	text-transform: none;
+	font-size: 12px;
+	color: #baa86f;
+	font-family: 'Open Sans', sans-serif;
+	/*font-family: 'Open Sans';*/
+	font-weight: normal;
+}
+
+a .img1:after{
+	clear: both;
+	display: block;
+	content: "";
+}
+
+
+.text_2{
+	padding-bottom:6px;
+	padding-left: 8px;
+	float: left;
+	display: inline-block;
+	font-size: 13px;
+	color: #232323;
+	text-transform: uppercase;
+}
+
+.text_2 h3{
+	padding-top:22px;
+	font-family: 'Raleway', sans-serif;
+	/*font-family: 'Raleway';*/
+	font-weight: 500;
+}
+
+.text_2:after{
+	clear: both;
+	display: block;
+	content: "";
+}
+
+.img2 a{
+	margin-left: 3px;
+	float: right;
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	background-color: #dedede;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 28px;
+	margin-top: 20px;
+	font-size: 14px;
+	color: white;
+	text-decoration: none;
+}
+
+.text_2 a:before{
+	display: inline-block;
+	content: "\f39e";
+	font-family: 'Font Awesome 5 Brands';
+}
+
+.text_2 a.fab fa-twitter:before{
+	display: inline-block;
+	content: "\f099";
+	font-family: 'Font Awesome 5 Brands';
+}
+
+.text_2 a.fab fa-google-plus-g:before{
+	display: inline-block;
+	content: "\f0d5";
+	font-family: 'Font Awesome 5 Brands';
+}
+
+
+.text_2 p{
+	text-transform: none;
+	font-size: 12px;
+	color: #baa86f;
+	font-family: 'Open Sans', sans-serif;
+	/*font-family: 'Open Sans';*/
+	font-weight: normal;
+}
+
+a .img2:after{
+	clear: both;
+	display: block;
+	content: "";
+}
+
+.text_3{
+	font-size: 13px;
+	padding-bottom: 6px;
+	padding-left: 8px;
+	text-transform: uppercase;
+	display: inline-block;
+	float: left;
+	color: #232323;
+}
+
+.text_3 h3{
+	padding-top: 22px;
+	font-family: 'Raleway', sans-serif;
+	/*font-family: 'Raleway';*/
+	font-weight: 500;
+}
+
+.text_3:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.img3 a {
+	float: right;
+	margin-left: 2px;
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	background-color: #dedede;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 28px;
+	margin-top: 20px;
+	font-size: 14px;
+	color: white;
+	text-decoration: none;
+}
+
+
+
+.text_3 a:before{
+	display: inline-block;
+	content: "\f39e";
+	font-family: 'Font Awesome 5 Brands';
+}
+
+.text_3 a.fab fa-twitter:before{
+	display: inline-block;
+	content: "\f099";
+	font-family: 'Font Awesome 5 Brands';
+}
+
+.text_3 a.fab fa-google-plus-g:before{
+	display: inline-block;
+	content: "\f0d5";
+	font-family: 'Font Awesome 5 Brands';
+}
+
+.text_3 p{
+	font-size: 12px;
+	color: #baa86f;
+	text-transform: none;
+	font-family: 'Open Sans', sans-serif;
+	/*font-family: 'Open Sans';*/
+	font-weight: normal;
+}
+
+a .img3:after{
+	content: "";
+	display: inline-block;
+	clear: both;
+}
+
+.button_link{
+	 text-transform: uppercase;
+	 border: 2px solid #515459;
+	 text-decoration: none;
+	 background: white;
+	 border-radius:33px;
+	 padding: 14px 33px;
+	 font-size: 13px;
+	 color: #24282f;
+	font-family: 'Open Sans', sans-serif;
+	 /*font-family: 'Open Sans';*/
+	 font-weight: normal;
+ }
+
+.button{
+	text-align: center;
+	margin-top: 35px;
+}
+
+.wraper{
+	text-align: center;
+	padding-top: 94px;
+	padding-bottom: 93px;
+	background-color: #f7f7f7;
+}
+
+.wraper h2{
+	margin-bottom: 76px;
+	color: #24282f;
+	text-transform: uppercase;
+	font-family: 'Raleway', sans-serif;
+	/*font-family: 'Raleway';*/
+	font-weight: 900;
+}
+
+.wraper h2:after{
+	content: "";
+	display: block;
+	height: 3px;
+	width: 63px;
+	background-color: #24282f;
+	margin: auto;
+	margin-top: 25px;
+}
+
+.wraper p{
+	margin-top: 31px;
+
+
+}
+
+.wraper h4{
+	margin-top: 36px;
+	margin-bottom: 16px;
+	font-size: 16px;
+	color: #b5a263;
+	font-family: 'Open Sans', sans-serif;
+	/*font-family: 'Open Sans';*/
+	font-weight: 600;
+
+
+}
+
+.wraper h5{
+	font-size: 13px;
+	color: #1e1e1e;
+	font-family: 'Open Sans', sans-serif;
+	/*font-family: 'Open Sans';*/
+	font-weight: normal;
+}
+
+
+.box {
+	max-width: 889px;
+	margin: auto;
+}
+.infirmations {
+	background-color: #2b2f35;
+	padding-top: 62px;
+	padding-bottom: 35px;
+	border-top: solid 1px #8b8d90;
+}
+
+.infirmations h4 {
+	font-family: 'Open Sans', sans-serif;
+	/*font-family: 'Open Sans';*/
+	font-weight: 600;
+	font-size: 14px;
+	color: #b5a263;
+
+
+}
+
+.infirmations p {
+	font-family: 'Open Sans', sans-serif;
+	/*font-family: 'Open Sans';*/
+	font-weight: normal;
+	font-size: 14px;
+	color: #6e7279;
+	margin-top: 25px;
+
+}
+
+
+.about {
+	float: left;
+	margin-right: 135px;
+	width: 232px;
+}
+
+.contact {
+	float: left;
+	margin-right: 117px;
+	width: 140px;
+}
+
+.form-froup {
+	float: right;
+	width: 237px;
+}
+
+.infirmations .box {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.form-froup_imput input {
+	width: 100%;
+	height: 30px;
+	padding: 10px;
+	background-color: #2b2f35;
+	border: solid 2px #61656b;
+	margin-top: 20px;
+	margin-bottom: 8px;
+	color: #ffffff;
+	font-family: 'Open Sans', sans-serif;
+	/*font-family: 'Open Sans';*/
+	font-weight: normal;
+	font-size: 11px;
+}
+
+button {
+	background-color: #2b2f35;
+	padding-bottom: 25px;
+	padding-top: 10px;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	/*font-family: 'Open Sans';*/
+	font-weight: normal;
+	width: 100%;
+	height: 30px;
+	color: #ffffff;
+	font-size: 11px;
+	border: solid 1px #47463e;
+	transition: 2s;
+}
+button:hover{
+	background-color: #b5a263;
+}
+
+footer{
+	background-color: #24282f;
+	padding-top: 22px;
+	padding-bottom: 22px;
+	border: solid 1px #42464c;
+}
+
+.socials{
+
+	max-width: 889px;
+	margin: auto;
+}
+
+.socials p{
+    font-size: 12px;
+	color: #5f636a;
+	float: left;
+	font-family: 'Open Sans', sans-serif;
+	/*font-family: 'Open Sans';*/
+	font-weight: normal;
+}
+
+.socials:after {
+	clear: both;
+	display: block;
+	content: "";
+}
+
+.socials a {
+	float: right;
+	margin-left: 8px;
+    display: inline-block;
+	width: 28px;
+	height: 28px;
+	background-color: #24282f;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 28px;
+	color: #6c7077;
+	border:solid 1px #6c7077;
+	text-decoration: none;
+
+}
+
+.socials a.fab fa-facebook-f:before{
+	display: inline-block;
+	content: "\f39e";
+	font-family: 'Font Awesome 5 Brands';
+
+}
+
+.socials a.fab fa-twitter:before{
+	 display: inline-block;
+	 content: "\f099";
+	 font-family: 'Font Awesome 5 Brands';
+ }
+
+.socials a.fab fa-google-plus-g:before{
+	display: inline-block;
+	content: "\f0d5";
+	font-family: 'Font Awesome 5 Brands';
+}
+
+.socials a.fab fa-dribbble:before{
+	display: inline-block;
+	content: "\f17d";
+	font-family: 'Font Awesome 5 Brands';
+}
+
+
+footer a:hover{
+	background-color:#b5a263;
+	color:#ffffff;
+}
+
