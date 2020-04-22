@@ -21,8 +21,9 @@
 @media only screen and (max-width: 768px) {
 
     header{
-        background-color:
-        width: 50%;padding: 15px;
+        background-color:green;
+        width: 50%;
+        padding: 15px;
     }
 }
 
